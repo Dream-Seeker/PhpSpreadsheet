@@ -153,6 +153,8 @@ class CodePage
                 return 'UTF-7'; //    Unicode (UTF-7)
             case 65001:
                 return 'UTF-8'; //    Unicode (UTF-8)
+            default:
++                return 'UTF-8';//    Unicode (UTF-8)
         }
         throw new PhpSpreadsheetException('Unknown codepage: ' . $codePage);
     }
